@@ -1,0 +1,12 @@
+<launch>
+  
+  <node pkg="points_raw_check" name="points_raw_check" type="points_raw_check" output="screen" /> 
+  
+  <node pkg="points_raw_check" name="filter_alter_lane" type="filter_alter_lane_numpy.py" output="screen" />
+
+  <node pkg="points_raw_check" name="filter_lane_no_ground" type="filter_lane_no_ground_numpy.py" output="screen" /> 
+
+  <node pkg="points_raw_check" name="draw_color_lane" type="draw_color_lane.py" output="screen" /> 
+
+
+</launch>
